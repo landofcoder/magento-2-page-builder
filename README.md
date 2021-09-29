@@ -35,7 +35,23 @@ Enhance page load time incredibly FEATURED
 
 Live Preview For Easier Editing
 
+## Installation
 
+Setup via composer:
+
+1. Run command:
+```
+composer require landofcoder/module-pagebuilder
+```
+2. Run magento 2 commands:
+```
+php bin/magento setup:upgrade
+php bin/magento setup:static-content:deploy -f
+php bin/magento cache:clean
+```
+
+## User Guide
+[User Guide & Developer Guide](https://landofcoder.gitbook.io/pagebuilder/)
 
 
 
