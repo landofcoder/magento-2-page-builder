@@ -167,12 +167,12 @@ class Cms extends \Magento\Backend\Block\Widget\Form\Generic implements
         );
         if (!$model->getId()) {
             $model->setRootTemplate($this->_pageLayout->getDefaultValue());
-            $model->setPageLayout($this->_pageLayout->getDefaultValue());
+            $model->setPageLayout("1column");
         }
 
         //List of custom layout files available for current page.
         $options = [['label' => 'No update', 'value' => '_no_update_']];
-        if($model->getId()){
+        if ($model->getId()) {
             if ($page = $this->findCurrentPage($model->getCmspageId())) {
                 //We must have a specific page selected.
                 //If custom layout XML is set then displaying this special option.
